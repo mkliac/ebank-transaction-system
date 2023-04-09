@@ -34,7 +34,7 @@ A user with userId **"0123456789"** and password **"1234"** is already initializ
 - Example  
 [photo]
 ### Get Transaction
-- Endpoint: api/v1/transaction/get
+- Endpoint: api/v1/transaction/get [**GET**]
 - Description: This endpoint is used for getting a list of transaction records for different accounts.
 - Request Parameters:  
 {  
