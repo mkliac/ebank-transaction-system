@@ -16,6 +16,9 @@
 [photo]
 
 ## API Endpoints
+### Swagger UI
+- Please navigate to /swagger-ui/index.html for details. Authorization is **REQUIRED** for using transaction endpoints. Bearer authorization is used and its value is the generated JWT token.   
+[photo]
 ### Authentication
 - Endpoint: api/v1/auth/authenticate [**POST**]
 - Description: This endpoint is used for logging in to the system. After the system successfully verifies your identity, it 
@@ -29,7 +32,7 @@ returns you a JWT token that lasts for 30 minutes. If the token is expired, you 
 {  
 "token":"jwt token"  
 }
-- **Notice**: For simplicity, the endpoint for registration is not provided. 
+- **NOTICE**: For simplicity, the endpoint for registration is not provided. 
 A user with userId **"0123456789"** and password **"1234"** is already initialized.  
 - Example  
 [photo]
@@ -60,7 +63,7 @@ A user with userId **"0123456789"** and password **"1234"** is already initializ
 "credits":"total flowing out of money in base currency",  
 "baseCurrency":"requested base currency"  
 }
-- **Notice**: 100 Transactions are randomly generated for each accounts(GBP, EUR, CHF) from 2022-1-1 to current date for
+- **NOTICE**: 100 Transactions are randomly generated for each accounts(GBP, EUR, CHF) from 2022-1-1 to current date for
 testing purpose. 
 - Example:  
 [photo]
