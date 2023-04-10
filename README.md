@@ -12,6 +12,9 @@
 2. Open a new terminal for running Kafka server using .\bin\windows\kafka-server-start.bat .\config\server.properties
 3. Run EbankTransactionSystemApplication.java
 
+## Database Entity Relationship Diagram  
+![alt text](https://github.com/mkliac/ebank-transaction-system/blob/master/database_diagram.png?raw=true)
+
 ## System Architecture
 ![alt text](https://github.com/mkliac/ebank-transaction-system/blob/master/ebank_system_architecture.png?raw=true)
 
