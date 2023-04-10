@@ -13,12 +13,12 @@
 3. Run EbankTransactionSystemApplication.java
 
 ## System Architecture
-![alt text](https://github.com/mkliac/ebank-transaction-system/master/ebank_system_architecture.png?raw=true)
+![alt text](https://github.com/mkliac/ebank-transaction-system/blob/master/ebank_system_architecture.png?raw=true)
 
 ## API Endpoints
 ### Swagger UI
 - Please navigate to /swagger-ui/index.html for details. Authorization is **REQUIRED** for using transaction endpoints. Bearer authorization is used and its value is the generated JWT token.   
-[photo]
+![alt text](https://github.com/mkliac/ebank-transaction-system/blob/master/swagger_ui_view.png?raw=true))
 ### Authentication
 - Endpoint: api/v1/auth/authenticate [**POST**]
 - Description: This endpoint is used for logging in to the system. After the system successfully verifies your identity, it 
@@ -35,7 +35,7 @@ returns you a JWT token that lasts for 30 minutes. If the token is expired, you 
 - **NOTICE**: For simplicity, the endpoint for registration is not provided. 
 A user with userId **"0123456789"** and password **"1234"** is already initialized.  
 - Example  
-[photo]
+![alt text](https://github.com/mkliac/ebank-transaction-system/blob/master/authentication_example.png?raw=true))
 ### Get Transaction
 - Endpoint: api/v1/transaction/get [**GET**]
 - Description: This endpoint is used for getting a list of transaction records for different accounts.
@@ -66,5 +66,5 @@ A user with userId **"0123456789"** and password **"1234"** is already initializ
 - **NOTICE**: 100 Transactions are randomly generated for each accounts(GBP, EUR, CHF) from 2022-1-1 to current date for
 testing purpose. 
 - Example:  
-[photo]
+![alt text](https://github.com/mkliac/ebank-transaction-system/blob/master/get_transaction_example.png?raw=true))
 
