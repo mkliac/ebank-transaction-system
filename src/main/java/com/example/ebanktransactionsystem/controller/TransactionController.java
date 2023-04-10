@@ -5,12 +5,10 @@ import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
@@ -31,7 +29,7 @@ public class TransactionController {
 
     @GetMapping("/get")
     public ResponseEntity<TransactionPageResponse> getTransactions(
-            TransactionRequest request,
+            @Valid TransactionRequest request,
             @RequestHeader("Authorization") String token
     ) throws IOException {
         System.out.println(token);
