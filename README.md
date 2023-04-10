@@ -13,7 +13,7 @@
 3. Run EbankTransactionSystemApplication.java
 
 ## System Architecture
-[photo]
+![alt text](https://github.com/mkliac/ebank-transaction-system/master/ebank_system_architecture.png?raw=true)
 
 ## API Endpoints
 ### Swagger UI
